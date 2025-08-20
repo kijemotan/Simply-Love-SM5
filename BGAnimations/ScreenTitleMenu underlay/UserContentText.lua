@@ -46,7 +46,7 @@ end
 
 -- build a 3-line string to display info about this version of SL, this version of SM, and installed song content
 local text = ("%s%s\n%s\n%s"):format(
-	sl_name,  (sl_version and (" v" .. sl_version) or ""),
+	sl_name,  (sl_version and sl_version or ""),
 	sm_version,
 	song_stats
 )
